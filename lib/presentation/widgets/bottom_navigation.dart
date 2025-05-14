@@ -15,11 +15,11 @@ class BottomNavigation extends StatelessWidget {
     return BottomNavigationBar(
       items: const [
         BottomNavigationBarItem(
-          icon: Icon(Icons.format_quote),
+          icon: Icon(Icons.format_quote, size: 24),
           label: 'All Quotes',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.thumb_up),
+          icon: Icon(Icons.favorite, size: 24),
           label: 'Favorites',
         ),
       ],

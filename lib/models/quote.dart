@@ -6,6 +6,6 @@ class Quote {
   Quote({
     required this.text,
     required this.author,
-    this.isFavorite=false,
+    this.isFavorite = false,
   });
 }
