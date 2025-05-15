@@ -14,7 +14,7 @@ class WavePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final double waveBase = size.height * 0.65;
     final double waveTop = size.height * 0.55; // Reduced height difference
-    final double amplitude = (waveBase - waveTop) / 1; // Smaller amplitude
+    final double amplitude = (waveBase - waveTop) / 2; // Smaller amplitude
 
     for (int i = 0; i < colors.length; i++) {
       final paint = Paint()
