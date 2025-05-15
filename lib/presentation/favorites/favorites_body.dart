@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../controllers/quote_controller.dart';
 import '../widgets/quote_list.dart';
-import '../widgets/wave_painter.dart';
+import '../widgets/wave_background.dart';
 
 class FavoritesBody extends StatelessWidget {
   const FavoritesBody({super.key});
@@ -10,7 +10,13 @@ class FavoritesBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        const WavePainter(),
+        const WaveBackground(
+          waveColors: [
+            Color(0xFFFFF9C4), // Light yellow (equivalent to Colors.yellow[100])
+            Color(0xFFFFE082), // Light amber (equivalent to Colors.amber[100])
+            Color(0xFFFFCC80), // Light orange (equivalent to Colors.orange[100])
+          ],
+        ),
         ListenableBuilder(
           listenable: QuoteController(),
           builder: (context, child) {
